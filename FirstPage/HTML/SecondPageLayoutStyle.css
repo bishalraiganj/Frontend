@@ -1,0 +1,48 @@
+/* Reset default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+/* Article (main content) */
+article {
+    flex: 3;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
