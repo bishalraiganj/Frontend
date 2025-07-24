@@ -1,0 +1,32 @@
+#mainHeading
+{
+    text-align: center ;
+    color:cornflowerblue;
+}
+
+#heading2
+{
+    margin : 20px;
+    color:chocolate;
+}
+
+#paragraph
+{
+    color:chocolate;
+    margin : 20px;
+}
+
+#heading3
+{
+    margin : 20px;
+}
+
+#form
+{
+    margin : 20px;
+}
+
+#email
+{
+    margin : 19px;
+}
