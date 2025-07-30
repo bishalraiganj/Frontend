@@ -1,0 +1,18 @@
+body{
+    border: 8px solid black;
+    display:flex;
+    justify-content:center;
+
+
+}
+
+
+
+.box{
+    height:200px;
+    width:200px;
+    background-color:cornflowerblue;
+    font-size:40pt;
+    /*border:1px #222222 solid;*/
+    /*margin-bottom : 4px;*/
+}
