@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dom practise</title>
+</head>
+
+<body>
+<header>
+  <h1> DOM </h1>
+</header>
+<main>
+  <p onclick="alert()">I am Bishal Adhikary , and the weather here in hyderabad is pleaseant </p>
+  <table id="myTable" border="1"></table>
+</main>
+<footer>Copyright 2025 | Developer Bishal Adhikary</footer>
+
+<script>
+  let name = window.prompt("Say your name");
+  let age = window.prompt("Say your age");
+
+
+
+  let table = document.getElementById('myTable');
+
+  let rowCount = parseInt(window.prompt("Enter row count "));
+  for(let i = 0 ; i < rowCount ; i++)
+  {
+
+    let row = table.insertRow();
+    let cell1 = row.insertCell(0);
+    let cell2 =row.insertCell(1);
+    let cell3 = row.insertCell(2);
+
+    cell1.textContent = name;
+    cell2.textContent = age;
+    cell3.textContent = Math.random() * 10 + " ";
+
+
+
+  }
+
+</script>
+</body>
+</html>
