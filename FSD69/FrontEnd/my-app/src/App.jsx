@@ -3,35 +3,31 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-import ComponentOne from './component/ComponentOne.jsx'
+import ComponentOne from './components/ComponentOne.jsx'
+import Greet from './components/Greet.jsx'
+import UserProfile from './components/UserProfile.jsx'
+
+
 function App() {
   // const [count, setCount] = useState(0)
 
+    const namesArr =  ["Bishal","Jashika","Sameer","Rishit","Amir","Jeffrey"];
+    const intVal = Math.floor(Math.random() * (namesArr.length));
   return (
-    <>
-      {/*<div>*/}
-      {/*  <a href="https://vite.dev" target="_blank">*/}
-      {/*    <img src={viteLogo} className="logo" alt="Vite logo" />*/}
-      {/*  </a>*/}
-      {/*  <a href="https://react.dev" target="_blank">*/}
-      {/*    <img src={reactLogo} className="logo react" alt="React logo" />*/}
-      {/*  </a>*/}
-      {/*</div>*/}
-      {/*<h1>Vite + React</h1>*/}
-      {/*<div className="card">*/}
-      {/*  <button onClick={() => setCount((count) => count + 1)}>*/}
-      {/*    count is {count}*/}
-      {/*  </button>*/}
-      {/*  <p>*/}
-      {/*    Edit <code>src/App.jsx</code> and save to test HMR*/}
-      {/*  </p>*/}
-      {/*</div>*/}
-      {/*<p className="read-the-docs">*/}
-      {/*  Click on the Vite and React logos to learn more*/}
-      {/*</p>*/}
+    <div style={{
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'center',
+        alignItems:'center',
+        // height:'100vh',
+
+    }}>
+
+        <Greet name={namesArr[intVal]}/>
+        <UserProfile name={namesArr[intVal]} email={"abc@gmail.com"}  age={1}/>
 
         <ComponentOne/>
-    </>
+    </div>
   )
 }
 
