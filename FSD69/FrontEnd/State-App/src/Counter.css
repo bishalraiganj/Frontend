@@ -4,7 +4,9 @@
     display: flex;
     width: 400px;
     height:400px;
-    border:5px solid blue;
+    border:5px solid deepskyblue;
+    border-radius:40px;
+    background-color:green;
     flex-direction: column;
     justify-content:center;
     align-items:center;
@@ -14,6 +16,7 @@
 .textBox{
     display: flex;
     width: 300px;
+    background-color:orange;
     border: 5px solid yellow;
     justify-content:space-evenly;
 }
