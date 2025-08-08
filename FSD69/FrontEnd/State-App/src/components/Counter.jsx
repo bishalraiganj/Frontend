@@ -11,6 +11,14 @@ class Counter extends  React.Component {
         }
     }
 
+    decrement()
+    {
+
+        this.setState({count: this.state.count - 1});
+
+
+    }
+
      increment = ()=>{
         this.setState({count: this.state.count + 1})
     }
@@ -29,6 +37,7 @@ class Counter extends  React.Component {
                     <span className={"buttonsBox"} >
 
                         <button className={"addButton"} onClick={this.increment} >add</button>
+                        <button className={"subButton"} onClick={this.decrement.bind(this)} >sub</button>
                     </span>
 
                 </div>
