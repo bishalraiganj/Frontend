@@ -4,6 +4,7 @@ import './App.css'
 import InputContextProvider from './components/InputContextProvider.jsx'
 import Adder from './components/Adder.jsx'
 import Container from './components/Container.jsx'
+import ApiComponent from './components/ApiComponent.jsx'
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
                    }} />
             <Adder valueRef={inputVal}/>
             <Container/>
+
+            <ApiComponent/>
 
         </div>
         </InputContextProvider>

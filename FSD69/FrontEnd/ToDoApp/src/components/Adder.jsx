@@ -8,7 +8,7 @@ export default function Adder({valueRef})
 
     const {addFunct} = useContext(InputContext);
 
-    const handeleClick = ()=>{
+    const handleClick = ()=>{
         const value = valueRef.current;
         if(value !== "")
         {
@@ -23,7 +23,7 @@ export default function Adder({valueRef})
     return(
         <div className={"adderBox"} >
 
-            <button className={"adderButtton"} onClick={handeleClick}>
+            <button className={"adderButtton"} onClick={handleClick}>
                 add
             </button>
         </div>
