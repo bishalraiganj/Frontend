@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+.logoImage{
+
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    max-width:200px;
+    max-height:200px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

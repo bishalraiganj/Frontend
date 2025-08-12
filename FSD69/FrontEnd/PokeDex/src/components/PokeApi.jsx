@@ -1,5 +1,5 @@
 
-import {useContext} from 'react'
+import {useContext,useEffect} from 'react'
 import PokemonsContext from './PokemonsContext.js'
 
 export default function PokeApi()
@@ -8,6 +8,9 @@ export default function PokeApi()
     const {addToPokeArr,currentPokemon,setCurrentPokemon} = useContext(PokemonsContext);
 
 
+    useEffect(()=>{
+        console.log("PokeApi component did mount / rendered")
+    })
 
 
     const fetchPokemon = ()=>{
