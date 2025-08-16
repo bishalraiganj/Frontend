@@ -1,0 +1,25 @@
+.register-container{
+
+    border-radius:40px;
+    border:3px cyan solid;
+    width:80vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.uNameBox{
+    margin-bottom:30px;
+
+}
+.passBox{
+    margin-bottom:30px;
+}
+.nameBox{
+    margin-bottom:30px;
+}
+.emailBox{
+    margin-bottom:30px;
+}

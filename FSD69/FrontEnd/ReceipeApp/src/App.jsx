@@ -4,6 +4,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 import ReceipeContextProvider from './contexts/ReceipeContextProvider.jsx'
 import Login from './components/Login.jsx'
+import Register from './components/Register.jsx'
 function App() {
 
 
@@ -22,7 +23,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Login/>} />
                 <Route path="/dashboard" element={<Dashboard/>} />
-                {/*<Route path="/register" element={<Register/>} />*/}
+                <Route path="/register" element={<Register/>} />
             </Routes>
             </div>
 
