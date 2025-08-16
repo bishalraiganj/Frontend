@@ -1,0 +1,11 @@
+.loginBox{
+
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:300px;
+    height:300px;
+    border: #535bf2 solid 3px;
+    align-items:center;
+}
