@@ -2,6 +2,7 @@ import './App.css'
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
+import Dashboard from './components/Dashboard.jsx'
 import ReceipeContextProvider from './contexts/ReceipeContextProvider.jsx'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
@@ -16,8 +17,10 @@ function App() {
         {/*</h1>*/}
 
 
-      <BrowserRouter>
+
         <ReceipeContextProvider>
+      <BrowserRouter>
+
 
             <div className={"main-container"}>
             <Routes>
@@ -27,24 +30,18 @@ function App() {
             </Routes>
             </div>
 
-        </ReceipeContextProvider>
         </BrowserRouter>
+    </ReceipeContextProvider>
 
 
 
 
-    </>
+
+
+</>
   )
 }
 
-function Dashboard()
-{
-    return(
-        <h1>
-            Dashboard ! logged In !
-        </h1>
-    )
 
-}
 
 export default App

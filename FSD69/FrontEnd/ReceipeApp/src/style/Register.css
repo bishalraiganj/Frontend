@@ -11,15 +11,49 @@
 }
 
 .uNameBox{
-    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:12%;
+    margin-bottom:10px;
 
 }
 .passBox{
-    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:12%;
+    margin-bottom:10px;
 }
 .nameBox{
-    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:12%;
+    margin-bottom:10px;
 }
 .emailBox{
-    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:12%;
+    margin-bottom:10px;
+}
+
+#passId{
+    width:100%;
+    height:50%;
+}
+
+#emailId{
+    height:50%;
+    width:100%;
+}
+#nameId{
+    height:50%;
+    width:100%;
+}
+#uId{
+    width:100%;
+    height:50%;
 }

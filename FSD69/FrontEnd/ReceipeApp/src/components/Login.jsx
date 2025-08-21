@@ -1,13 +1,39 @@
 
 
-import {useRef} from 'react'
+import {useRef,useContext} from 'react'
 import {useNavigate} from 'react-router-dom'
 import './Login.css'
+import ReceipeContext from '../JavaScript/ReceipeContext.js'
+
 export default function Login()
 {
     const navigate = useNavigate();
     const userInput = useRef("");
     const passInput = useRef("");
+    const {setUserSession } = useContext(ReceipeContext);
+
+
+    const fetchUserSession = async()=>{
+
+        const payload = {
+            username:userInput.current,
+            password:passInput.current
+
+        }
+
+        const response = await fetch('/api/fetch/getUserSession',{
+            method: 'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(payload)
+        });
+        const result = await response.json();
+
+        setUserSession(result);
+        console.log(result);
+    };
+
 
     const handleClick =async () => {
 
@@ -29,6 +55,8 @@ export default function Login()
             const result =  await response.json();
             if(result===true)
             {
+
+                 await fetchUserSession();
                 navigate("/dashboard");
             }
             else
@@ -55,17 +83,17 @@ export default function Login()
         <div>
             <div className={'loginBox'} >
                <span className={"usernameBox"} >
-                   <input  onChange={(e)=>{
+                   <input maxLength={20} style={{width:'98%',height:'87%'}} onChange={(e)=>{
                    userInput.current=e.target.value}} placeholder={"username"} />
                </span>
 
                 <span className={"passwordBox"} >
-                <input   type="password" onChange={(e)=>{
+                <input   style={{width:'98%',height:'87%',border:'grey solid 2px'}} maxLength={20} type="password" onChange={(e)=>{
                     passInput.current = e.target.value;
                 }} placeholder={"password "} />
                 </span>
                 <span className={"loginButtonBox"} >
-                    <button className={"loginButton"} onClick={()=>{
+                    <button   className={"loginButton"} onClick={()=>{
                         handleClick()
                     }}>Login</button>
                 </span>
